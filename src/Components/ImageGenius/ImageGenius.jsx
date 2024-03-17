@@ -8,6 +8,10 @@ const ImageGenius = () => {
       <div className="img-loading">
         <div className="image"><img src={img_default} alt="" /></div>
       </div>
+
+      <div className="seach-box">
+        <input type="text" className='search-input' placeholder='Describe Your image...' />
+      </div>
       
     </div>
   )
