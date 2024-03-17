@@ -27,3 +27,13 @@
 .img-loading img{
     width: 250px;
 }
+
+.search-box{
+    display: flex;
+    width: 1000px;
+    height: 95px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #1F3540 ;
+}
