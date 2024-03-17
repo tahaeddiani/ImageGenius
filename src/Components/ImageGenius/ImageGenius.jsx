@@ -2,9 +2,10 @@ import React from 'react'
 import './ImageGenius.css'
 import img_default from '../Assets/img-default.png'
 const ImageGenius = () => {
+
+
   return (
     <div className='ai-image-genius'>
-
       {/* title*/}
       <div className="header">Text To Image <span>AI</span></div>
 
