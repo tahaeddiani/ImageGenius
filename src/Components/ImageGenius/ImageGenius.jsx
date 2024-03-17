@@ -14,7 +14,7 @@ const ImageGenius = () => {
         <div className="image"><img src={img_default} alt="" /></div>
       </div>
 
-      {/* search box*/}
+      {/* input box*/}
       <div className="search-box">
         <input type="text" className='search-input' placeholder='Describe Your image...' />
         <div className="generate-btn">Generate</div> 
