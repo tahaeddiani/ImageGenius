@@ -1,3 +1,9 @@
+/* make variables */
+:root {
+  --mint: #70BAB9;
+  --ocean: #205567;
+}
+
 .App {
   text-align: center;
 }

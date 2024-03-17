@@ -1,5 +1,6 @@
 import './App.css';
-import ImageGenius from './Components/Assets/ImageGenius/ImageGenius';
+import ImageGenius from './Components/ImageGenius/ImageGenius';
+
 
 function App() {
   return (
