@@ -7,11 +7,14 @@ const ImageGenius = () => {
 
   const [image_url, setImage_url] = useState("/");
   let inputRef = useRef(null);
+  const [loading, setLoading] = useState(false);
+
 
   const imageGenius = async ()  => {
     if(inputRef.current.value==="") {
       return 0;
     }
+    setLoading(true);
     const response = await fetch(
       "https://api.openai.com/v1/images/generations",
       {
@@ -19,7 +22,7 @@ const ImageGenius = () => {
         headers:
         {
           "Content-Type":"application/json",
-          Authorization: process.env.REACT_APP_API_KEY,
+          Authorization: process.env.REACT_APP_API_KEY,,
           "User-Agent":"Chrome",
         },
         body:JSON.stringify({
@@ -32,6 +35,7 @@ const ImageGenius = () => {
     );
     let data = await response.json();
     setImage_url(data.data[0].url);
+    setLoading(false);
     console.log(data);
     console.log(data.data[0].url);
   }
@@ -41,10 +45,17 @@ const ImageGenius = () => {
       <div className="img-logo"><img src="" alt="" />logoooo</div>
       {/* title*/}
       <div className="header">Image <span>Genius</span></div>
+      <div className="sub-header">Text To Image AI</div>
 
       {/* image*/}
       <div className="img-loading">
         <div className="image"><img src={image_url==="/"?img_default:image_url} alt="" /></div>
+      </div>
+
+      {/* loading_bar */}
+      <div className="loading">
+        <div className={loading?"loading-bar-full":"loading-bar"}></div>
+        <div className={loading?"loading-text":"display-none"}>Loading...</div>
       </div>
 
       {/* input box*/}
