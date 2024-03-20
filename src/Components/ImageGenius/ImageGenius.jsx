@@ -23,7 +23,7 @@ const ImageGenius = () => {
         headers:
         {
           "Content-Type":"application/json",
-          Authorization: REACT_APP_API_KEY,
+          Authorization: process.env.REACT_APP_API_KEY,
           "User-Agent":"Chrome",
         },
         body:JSON.stringify({

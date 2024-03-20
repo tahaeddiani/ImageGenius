@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Image Genius AI 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ImageGenius AI is a web application designed to generate images based on text input. Leveraging the power of AI, users can describe an image in text format, and the application will produce a corresponding image. The project aims to demonstrate the capabilities of AI in understanding and generating visual content from textual descriptions.
 
 ## Available Scripts
 
