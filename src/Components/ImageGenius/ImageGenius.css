@@ -8,14 +8,20 @@
     gap: 30px;
 }
 
-.img-logo{
-    margin-top: -40px;
+.sub-header{
+    margin-top: -15px;
+    font-size: 18px;
+    color: lightgrey;
+    font-style: italic;
+
 }
 .header{
    
     font-size: 70px;
     font-weight: 500;
+    margin-top: -30px;
     /* padding-bottom: 5px; */
+    
    
 }
 
